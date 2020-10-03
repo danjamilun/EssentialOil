@@ -1,0 +1,18 @@
+﻿@model EssentialOil_Products
+
+    <div class="details">
+        <img class="thumbnail-img" alt="@Model.Name" src="@Model.ImageUrl">
+        <div class="caption-full">
+            <h3 class="pull-right">@Model.Price</h3>
+            <h3><b>Name: @Model.Name </b></h3>
+            <h3><b>Aroma: @Model.Aroma</b> </h3>
+            <p class="description" >Description: @Model.LongDescription</p>
+            <div class="addToCart">
+                <p class="button">
+                    <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                       asp-route-productId="@Model.EssentialOil_ProductsId">Add to cart</a>
+                </p>
+            </div>
+        </div>
+    </div>
+

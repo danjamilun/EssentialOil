@@ -1,0 +1,26 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel"/>
+<h2 class="des-int">100% pure essential oils for daily use, obtained from various plants, ensure a healthy life and functioning</h2>
+<br />
+<h4 class="des-ind">Essential oil products that you must have in your life!</h4>
+<br />
+<div class="row">
+    <div class="thumbnail-index">
+
+        <img class="primary-image" src="~/Image/Essential-Oils.jpg" />
+        <h3>
+            <a asp-controller="Products"
+               asp-action="Oil_Products">Essential Oil</a>
+        </h3>
+    </div>
+    <div class="thumbnail-index">
+
+        <img class="secundary-image" src="~/Image/soap-of-essential-oils.jpg" />
+        <h3>
+            <a asp-controller="Products"
+               asp-action="Soap_Products">Soap Of Oil</a>
+        </h3>
+    </div>
+
+</div>
